@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang=en>
 
 <head>
@@ -9,11 +10,21 @@
 </head>
 
 <body>
-    <!-- wqj3d -->
     <div id=root></div>
     <script type="text/javascript" src="main.js"></script>
 </body>
 
-<!-- https://geohash.softeng.co/ -->
+<script>
+    // https://geohash.softeng.co/
+
+    window.onload = function () {
+        var elements = document.getElementsByTagName("input");
+        for (var ii = 0; ii < elements.length; ii++) {
+            if (elements[ii].type == "text") {
+                elements[ii].value = "";
+            }
+        }
+    }
+</script>
 
 </html>
